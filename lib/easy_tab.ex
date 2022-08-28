@@ -1,7 +1,10 @@
 defmodule EasyTab do
-  @moduledoc """
-  Documentation for `EasyTab`.
+
+  @moduledoc ~S"""
+
   """
+
+
 
   @doc """
   Hello world.
@@ -16,3 +19,4 @@ defmodule EasyTab do
     :world
   end
 end
+# SPDX-License-Identifier: Apache-2.0
