@@ -21,6 +21,7 @@ defmodule EasyTab.MixProject do
       description: @description,
       elixir: "~> 1.13",
       elixirc_paths: elixirc_paths(Mix.env()),
+      escript: [main_module: EasyTab.Cli],
       package: package(),
       preferred_cli_env: [
         coveralls: :test,
@@ -46,8 +47,10 @@ defmodule EasyTab.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:extractly, "~>0.5.3", only: [:dev]},
+      {:csv, "~> 2.4.1"},
+      {:ex_aequo, "~> 0.4.0"},
       {:excoveralls, "~> 0.14.6", only: [:test]},
+      {:extractly, "~>0.5.3", only: [:dev]},
       # {:dep_from_hexpm, "~> 0.3.0"},
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
     ]

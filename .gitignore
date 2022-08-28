@@ -24,3 +24,4 @@ easy_tab-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+/easy_tab
